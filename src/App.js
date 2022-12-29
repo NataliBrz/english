@@ -1,26 +1,37 @@
 import './App.css';
 import React from 'react';
-import
+import Card from './Card';
 
-  function App() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+const unresolvetWords = [
+  {
+    name: "cat",
+    description: "small animal"
+  },
+  {
+    name: "dog",
+    description: "big animal"
+  },
+  {
+    name: "bird",
+    description: "not animal"
   }
+]
+const resolvedWords = [
+
+]
+
+const knownWords = [
+
+]
+
+const element = unresolvetWords[0]
+
+function App() {
+  return (
+    <div className="App">
+      <Card word={element.name} description={element.description} />
+    </div>
+  );
+}
 
 export default App;

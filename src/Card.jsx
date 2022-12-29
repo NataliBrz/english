@@ -1,11 +1,10 @@
 
-import './Card.css';
 
-function Card() {
+function Card({ word, description }) {
   return (
-    <div className="Card">
-      <div>murz</div>
-      <img src='https://www.wallpaperflare.com/static/642/294/549/cat-grass-leaves-autumn-wallpaper.jpg' />
+    <div className="wordcard">
+      <div className="cardword">{word}</div>
+      <div className="carddescription">{description}</div>
     </div>
   );
 }
