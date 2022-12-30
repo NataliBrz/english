@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import Card from './Card';
+import Button from './Button';
 
 const unresolvetWords = [
   {
@@ -30,6 +31,11 @@ function App() {
   return (
     <div className="App">
       <Card word={element.name} description={element.description} />
+      <div className='Button'>
+        <Button name="Не знаю" />
+        <Button name="Оставшиеся карточки" />
+        <Button name="Знаю" />
+      </div>
     </div>
   );
 }
