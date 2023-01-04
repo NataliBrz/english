@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import Card from './Card';
 import Button from './Button';
+import Header from './Header';
 
 const unresolvetWords = [
   {
@@ -30,6 +31,7 @@ const element = unresolvetWords[0]
 function App() {
   return (
     <div className="App">
+      <div><Header /></div>
       <Card word={element.name} description={element.description} />
       <div className='Button'>
         <Button name="Не знаю" />
